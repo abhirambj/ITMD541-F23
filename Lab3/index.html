@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Tip Calculator</h1>
+      <form id="tipForm">
+        <div class="form-group">
+          <label for="billTotal">Bill Total:</label>
+          <input type="text" id="billTotal" placeholder="Enter Bill Total" required />
+        </div>
+        <div class="form-group">
+          <label for="tip">Tip Percentage:</label>
+          <input type="range" id="tip" min="0" max="100" value="1" />
+          <span id="tipValue">15%</span>
+        </div>
+        <div class="form-group">
+          <label for="tipAmount">Tip Amount:</label>
+          <input type="text" id="tipAmount" disabled />
+        </div>
+        <div class="form-group">
+          <label for="totalWithTip">Total Bill with Tip:</label>
+          <input type="text" id="totalWithTip" disabled />
+        </div>
+      </form>
+    </div>
+    <div class="right" style="margin-left: 20px">
+      <h1>Summary</h1>
+      <div class="summary">
+        <p>Total Tip: <span id="summaryTipAmount">$0.00</span></p>
+        <p>Total Amount: <span id="summaryTotalWithTip">$0.00</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

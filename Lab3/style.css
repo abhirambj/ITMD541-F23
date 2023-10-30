@@ -1,0 +1,191 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  /* Set a maximum width for better mobile usability */
+  width: 90%;
+  /* Take up 90% of the available width */
+  transform-origin: center center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  /* Take up the entire available width */
+}
+
+input[type="text"]:disabled {
+  background-color: #eee;
+}
+
+input[type="range"] {
+  width: 100%;
+  /* Take up the entire available width */
+}
+
+#tipValue {
+  font-weight: bold;
+}
+
+.calculator:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.calculator:active {
+  transform: scale(0.95);
+}
+
+.summary {
+  float: right;
+  padding: 20px;
+  text-align: right;
+  border-left: 1px solid #ccc;
+}
+
+.summary h2 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.summary p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.summary span {
+  font-weight: bold;
+  color: #0074d9;
+}
+
+* {
+  color: #000; /* Set all text to black */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #6a5094;
+  background-image: linear-gradient(316deg, #12c2e9 0%, #f64f59 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  background: #1d2b64; /* Start color for the gradient background */
+  background-color: white; /* Gradient background */
+  color: #000; /* Set text color to black */
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 20px;
+}
+
+.right {
+  border-left: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #193b58;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000; /* Set text color to black */
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333; /* Text color for input fields */
+  background-color: #fff; /* Input field background color */
+}
+
+input[type="text"]:disabled {
+  background-color: #eee;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+#tipValue {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #0074d9;
+}
+
+.summary {
+  border: 0px;
+}
+
+.summary p {
+  font-size: 1rem;
+  color: #000; /* Set text color to black */
+  margin: 5px 0;
+}
+.right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
