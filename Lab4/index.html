@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <title>Sunrise Sunset Dashboard</title>
+  <style>
+    /* Add a class to hide elements */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Sunrise Sunset Dashboard</h2>
+  </header>
+
+  <main>
+    <section id="search-section">
+      <div class="search-options">
+        <button id="currentLocationBtn">
+          <i class="fas fa-map-marker-alt" style="color: green;"></i>
+        </button>
+        <input type="text" id="searchInput" placeholder="Enter a location">
+        <button id="searchBtn">Search</button>
+      </div>
+    </section>
+
+    <section id="result-section">
+      <div class="result-box hidden" id="currentDayBox">
+        <h3>Current Day</h3>
+        <div id="currentDayInfo" class="result-info">
+          <!-- Current day data goes here -->
+        </div>
+      </div>
+
+      <div class="result-box hidden" id="nextDayBox">
+        <h3>Next Day</h3>
+        <div id="nextDayInfo" class="result-info">
+          <!-- Next day data goes here -->
+        </div>
+      </div>
+
+      <div id="errorDisplay" class="hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by Sunrise Sunset API and Geocode API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
